@@ -1,8 +1,8 @@
-import { IKeyChain, ISecretKeyChain } from "../Interface";
-import { Key } from "./Key";
+import { IKeyChain, ISecretKeyChain } from '../Interface';
+import { Key } from './Key';
 export declare class KeyChain implements IKeyChain {
-    protected _keys: Array<Key>;
-    protected _secrets: ISecretKeyChain;
-    constructor(keys: Array<Key>);
+    protected _keys: Key[];
+    protected _secret: ISecretKeyChain;
+    constructor(keys: Key[]);
     get secret(): ISecretKeyChain;
 }

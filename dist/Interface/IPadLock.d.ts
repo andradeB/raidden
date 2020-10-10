@@ -1,4 +1,4 @@
-import { IKey } from "./IKey";
+import { IKey } from './IKey';
 export interface IPadLock {
     canUnlock(key: IKey): boolean;
 }
