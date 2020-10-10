@@ -1,2 +1,7 @@
 node_modules
 .idea
+
+src
+tsconfig.json
+tslint.json
+.prettierrc

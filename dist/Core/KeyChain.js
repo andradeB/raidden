@@ -15,7 +15,7 @@ exports.KeyChain = void 0;
 var KeyChain = /** @class */ (function () {
     function KeyChain(keys) {
         this._keys = keys;
-        this._secrets = this._keys.reduce(function (acc, item) {
+        this._secret = this._keys.reduce(function (acc, item) {
             var secret = {};
             secret[item.secret] = true;
             return __assign(__assign({}, acc), secret);
@@ -23,7 +23,7 @@ var KeyChain = /** @class */ (function () {
     }
     Object.defineProperty(KeyChain.prototype, "secret", {
         get: function () {
-            return this._secrets;
+            return this._secret;
         },
         enumerable: false,
         configurable: true

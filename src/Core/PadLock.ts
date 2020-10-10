@@ -1,6 +1,6 @@
 import { IKey, IKeyChain, IPadLock, ISecretKeyChain } from '../Interface';
 
-export abstract class PadLock implements IPadLock {
+export class PadLock implements IPadLock {
   protected _secrets: ISecretKeyChain;
 
   constructor(keyChain: IKeyChain) {
