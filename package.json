@@ -1,9 +1,9 @@
 {
   "name": "raidden-core",
-  "version": "1.0.2",
-  "description": "",
-  "main": "dist/index.js",
-  "types" : "dist/index.d.ts",
+  "version": "1.1.0",
+  "description": "Simple access control",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
