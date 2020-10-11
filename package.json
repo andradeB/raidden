@@ -1,11 +1,22 @@
 {
   "name": "raidden-core",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Simple access control",
   "main": "./dist/index.js",
   "module": "dist/index.es.js",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "scripts": {
     "test": "jest --config jestconfig.json",
+    "release": "standard-version",
     "build": "rollup -c",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json"
@@ -22,10 +33,13 @@
   },
   "homepage": "https://github.com/andradeB/raidden-core#readme",
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/bcryptjs": "^2.4.2",
     "@types/jest": "^26.0.14",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
+    "husky": "^4.3.0",
     "jest": "^26.5.2",
     "prettier": "^2.1.2",
     "rollup": "^2.29.0",
@@ -34,6 +48,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-typescript2": "^0.27.3",
+    "standard-version": "^9.0.0",
     "ts-jest": "^26.4.1",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
@@ -42,5 +57,7 @@
   "peerDependencies": {
     "bcryptjs": "^2.4.3"
   },
-  "files": [ "dist" ]
+  "files": [
+    "dist"
+  ]
 }
