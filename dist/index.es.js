@@ -1,16 +1,8 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var bcrypt = require('bcryptjs');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var bcrypt__default = /*#__PURE__*/_interopDefaultLegacy(bcrypt);
+import bcrypt from 'bcryptjs';
 
 class Key {
     constructor(secret) {
-        this.secret = bcrypt__default['default'].hashSync(secret, 10);
+        this.secret = bcrypt.hashSync(secret, 10);
     }
 }
 
@@ -37,7 +29,5 @@ class PadLock {
     }
 }
 
-exports.Key = Key;
-exports.KeyChain = KeyChain;
-exports.PadLock = PadLock;
-//# sourceMappingURL=index.js.map
+export { Key, KeyChain, PadLock };
+//# sourceMappingURL=index.es.js.map
