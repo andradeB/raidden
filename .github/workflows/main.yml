@@ -29,8 +29,5 @@ jobs:
       - name: Build project
         run: npm run-script build
         
-      - name: Publish
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-
+      - name: NPM Publish
+        uses: JS-DevTools/npm-publish@v1
