@@ -27,7 +27,14 @@ jobs:
       - name: Build project
         run: npm run-script build
         
-      - name: NPM Publish
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: chimpwizards-npm-publish
+      # You may pin to the exact commit or the version.
+      # uses: chimpwizards-pipeline/npm-publish@6765907fd3fc2a1a14274d4fbdf4bcd340b491cb
+        uses: chimpwizards-pipeline/npm-publish@v1.0.2
+        with:
+          # NPM Repository Username
+          NPM_USERNAME: baduas
+          # NPM Repository user email
+          NPM_AUTH_EMAIL: andradedias.bruno@hotmail.com
+          # NPM Repository Access Token
+          NPM_AUTH_TOKEN_BASE64: ${{secrets.NPM_TOKEN}}
