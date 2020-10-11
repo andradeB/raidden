@@ -26,6 +26,8 @@ export default {
         resolve(),
         typescript({
             typescript: require('typescript'),
+            tsconfig: "tsconfig.json",
+            useTsconfigDeclarationDir: true,
         }),
     ]
 }
