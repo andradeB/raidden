@@ -5,4 +5,3 @@ tsconfig.json
 tslint.json
 .prettierrc
 coverage
-dist
