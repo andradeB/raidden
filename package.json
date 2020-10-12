@@ -1,5 +1,5 @@
 {
-  "name": "raidden-core",
+  "name": "raidden",
   "version": "1.4.0",
   "description": "Simple access control",
   "main": "./dist/index.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andradeB/raidden-core.git"
+    "url": "git+https://github.com/andradeB/raidden.git"
   },
   "keywords": [],
   "author": "Bruno de Andrade Dias <andradedias.bruno@hotmail.com>",
