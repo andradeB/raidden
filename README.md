@@ -1,6 +1,6 @@
 # Raidden
 [![npm version](https://img.shields.io/badge/dynamic/json?color=success&label=Raidden&prefix=v.&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FandradeB%2Fraidden%2Fmaster%2Fpackage.json)](https://badge.fury.io/js/raidden)  
->   Sometimes a lock is enough!
+>   Sometimes a padlock is enough!
 
 A bunker is not always necessary to control access, or to hide content. A padlock can be much more practical and simple to use.
 
