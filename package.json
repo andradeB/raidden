@@ -25,7 +25,14 @@
     "type": "git",
     "url": "git+https://github.com/andradeB/raidden.git"
   },
-  "keywords": [],
+  "keywords": [
+    "acl",
+    "access control",
+    "react",
+    "typescript",
+    "javascript",
+    "abacl"
+  ],
   "author": "Bruno de Andrade Dias <andradedias.bruno@hotmail.com>",
   "license": "ISC",
   "bugs": {
