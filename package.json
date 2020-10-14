@@ -1,6 +1,6 @@
 {
   "name": "raidden",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simple access control",
   "main": "./dist/index.js",
   "module": "dist/index.es.js",
@@ -16,7 +16,8 @@
   },
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "release": "standard-version",
+    "prerelease": "yarn build",
+    "release": "git add ./dist && standard-version -a",
     "build": "rollup -c",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json"
