@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/andradeB/raidden/compare/v1.2.0...v1.2.1) (2020-10-14)
+
+
+### Bug Fixes
+
+* canUnlock was returning undefined ([b940b29](https://github.com/andradeB/raidden/commit/b940b29873a4a6322e2af694ca313d72490f772b))
+
 ## 1.2.0 (2020-10-13)
 
 
